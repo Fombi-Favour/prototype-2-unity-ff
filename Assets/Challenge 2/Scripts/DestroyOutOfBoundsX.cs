@@ -16,8 +16,9 @@ public class DestroyOutOfBoundsX : MonoBehaviour
             Destroy(gameObject);
         } 
         // Destroy balls if y position is less than bottomLimit
-        else if (transform.position.z < bottomLimit)
+        else if (transform.position.y < bottomLimit)
         {
+            Debug.Log("Game Over!");
             Destroy(gameObject);
         }
 
